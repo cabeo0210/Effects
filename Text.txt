@@ -1,0 +1,15 @@
+Heyy guys
+Welcome back to my channel ♥
+Như ở đoạn demo đầu video :D hôm nay mình sẽ chia sẻ với các bạn cách tạo ra các hiệu ứng ( Animation ) để thay thế các hiệu ứng hover bình thường mình hay dùng
+Mục đích là cho người dùng có thể có thiện cảm hơn khi sử dụng trang web 
+Cũng như là sẽ có trải nghiệm + ấn tượng tốt hơn :D 
+Nhìn vậy thôi chứ cũng đơn giản thui
+Bạn có thể ứng dụng trực tiếp vào project, website của bạn, hoặc các form nhập liệu đơn giản cũng có thể dùng được nhé ♥
+Nào giờ ta vào code thôi :D 
+
+Okay cũng khá đơn giản đúng khum nào :D 
+Các bạn nếu có hứng thú thì bật VS lên code thử xem sao nhé 
+Link code mình sẽ để dưới phần mô tả cho bạn nào cần hen
+Nếu các bạn thấy video hay thì ủng hộ mình 1 like & subcribes với nhennn ♥
+Cảm ơn các bạn đã xem hết video ♥
+Many Thanks ♥

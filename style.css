@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #090821;
+}
+
+div {
+  margin-right: 30px;
+}
+/* Các bạn bỏ dấu chấm trước div để nó cách ra nhé 
+Khi nãy mình quên mình nhớ div là class nên mới có .div kekek :D */
+
+.box1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 2em;
+}
+
+.box1-items {
+  width: 0.3em;
+  height: 1em;
+  background-color: #3cefff;
+}
+
+/* giờ mình sẽ tạo hiệu ứng cho div trên nhé ♥ */
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2);
+  }
+}
+.box1-items:nth-of-type(1) {
+  animation: grow 1s -0.45s ease-in-out infinite;
+}
+.box1-items:nth-of-type(2) {
+  animation: grow 1s -0.3s ease-in-out infinite;
+}
+.box1-items:nth-of-type(3) {
+  animation: grow 1s -0.15s ease-in-out infinite;
+}
+.box1-items:nth-of-type(4) {
+  animation: grow 1s ease-in-out infinite;
+}
+
+.box2 {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border: 3px solid #3cefff;
+  overflow: hidden;
+  animation: spin 3s ease infinite;
+}
+@keyframes spin {
+  50%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill {
+  25%,
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.box2::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 2em;
+  height: 2em;
+  background-color: hsla(185, 100%, 62%, 0.75);
+  transform-origin: center bottom;
+  animation: fill 3s linear infinite;
+}
+
+/* box3 */
+
+.box3 {
+  perspective: 120px;
+}
+.coin {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 4px solid #3cefff;
+  animation: spin2 1.5s ease-in-out infinite;
+}
+@keyframes spin2 {
+  to {
+    transform: rotateY(540deg);
+  }
+}
+
+/* box-4 */
+
+.loader {
+  position: relative;
+}
+
+.outer,
+.middle,
+.inner {
+  border: 3px solid transparent;
+  border-top-color: #3cefff;
+  border-right-color: #3cefff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes spin3 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Đoạn này do mình đặt trùng tên với animation ở trên, nên các bạn đổi lại để tránh trùng nhé ♥ */
+.outer {
+  width: 3.5em;
+  height: 3.5em;
+  margin-left: -1.75em;
+  margin-top: -1.75em;
+  animation: spin3 2s linear infinite;
+}
+.middle {
+  width: 2.1em;
+  height: 2.1em;
+  margin-left: -1.05em;
+  margin-top: -1.05em;
+  animation: spin3 1.75s linear infinite;
+}
+.inner {
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: -0.4em;
+  margin-top: -0.4em;
+  animation: spin3 1.5s linear infinite;
+}
